@@ -1,0 +1,79 @@
+/*////////////////////////
+/// Variables
+////////////////////////*/
+$lightGreen: #94FFB8;
+$strongGreen: #30B25B;
+$strongRed: #FF2923;
+$lightRed: #FF8C89;
+/*////////////////////////
+/// General
+////////////////////////*/
+body {
+  font-size: 20px;
+  background-color: $lightGreen;
+}
+a {
+  padding: 0;
+  margin: 0;
+}
+li {
+  list-style: none;
+}
+h2 {
+  padding: 0;
+  margin: 0;
+}
+/*////////////////////////
+/// IDs
+////////////////////////*/
+#list {
+  text-align: center;
+}
+/*////////////////////////
+/// Classes
+////////////////////////*/
+.movie-article {
+  position: relative;
+  max-width: 12em;
+  display: inline-block;
+  border: .25em solid $lightRed;
+  margin: .7em;
+  overflow: hidden;
+}
+.movie-anchor {
+
+}
+.movie-image {
+
+}
+.movie-imageWrapper {
+  margin: 0;
+  font-size: 0;
+}
+.movie-title {
+  background-color: $lightRed;
+  font-size: .9em;
+  position: absolute;
+  bottom: .5em;
+  left: 0;
+  right: 0;
+}
+.movie-year {
+  background-color: $lightRed;
+  border-radius: .2em;
+  position: absolute;
+  top: 1em;
+  left: -1.5em;
+  transform: rotate(-45deg);
+  padding: .1em 1.5em 0 2em;
+}
+.movie-qualityList {
+  position: absolute;
+  top: 0;
+  right: -.1em;
+}
+.movie-quality {
+  background-color: $lightRed;
+  border-radius: .2em;
+  padding: .1em;
+}
