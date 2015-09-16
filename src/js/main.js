@@ -42,7 +42,7 @@ $(document).ready(function() {
   /// Movie page
   ////////////////////////
 
-  $('.movie-article').on('click', function(){
+  $('body').on('click', 'article', function(beta){
     selectedMovie();
   });
 
