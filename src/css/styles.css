@@ -10,7 +10,9 @@ body {
 
 a {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+  text-decoration: none;
+  color: black; }
 
 li {
   list-style: none; }
@@ -59,10 +61,12 @@ h2 {
 
 .movie-qualityList {
   position: absolute;
-  top: 0;
+  top: -.5em;
   right: -.1em; }
 
 .movie-quality {
   background-color: #FF8C89;
   border-radius: .2em;
-  padding: .1em; }
+  padding: .1em;
+  display: block;
+  margin-bottom: .5em; }

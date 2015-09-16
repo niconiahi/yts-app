@@ -37,18 +37,14 @@ $(document).ready(function() {
 
     gatherInformation();
   });
-  
+
   ////////////////////////
   /// Movie page
-  ///
-  /// cargas page
-  /// una vez cargado creas las rutas con
-  /// page('ruta', controlador)
-  /// donde ruta es un string con la ruta como va a aparecer en la url (/algo por ejemplo) y controlador es la función que querés que se ejecute en esa ruta
-  /// luego que definis todas las rutas usas page.start() para iniciar page.js
   ////////////////////////
 
-  // page('/app/' + movies.)
+  $('.movie-article').on('click', function(){
+    selectedMovie();
+  });
 
   ////////////////////////
   /// Functions
@@ -74,17 +70,16 @@ $(document).ready(function() {
           var yearToUse = '<time class="movie-year">' + movies[i].year + '</time>';
           var qualityToUse = [];
           for (var x = 0; x < movies[i].torrents.length; x++) {
-            qualityToUse[x] = '<li class="movie-quality">' + movies[i].torrents[x].quality + '</li>';
+            qualityToUse[x] = '<li class="movie-quality"><a data-action="download" href="' + movies[i].torrents[x].url + '">' + movies[i].torrents[x].quality + '</a></li>';
           }
           var qualitiesToUse = $('<ul class="movie-qualityList"></ul>');
 
-          // movieData.append(backgroundToUse);
           newMovie.append(imageToUse);
           newMovie.append(titleToUse);
           newMovie.append(yearToUse);
           qualitiesToUse.append(qualityToUse[0]);
-          if (qualitiesToUse[1] !== 'undefined') {
-            newMovie.append(qualitiesToUse[1]);
+          if (qualityToUse[1] !== 'undefined') {
+            qualitiesToUse.append(qualityToUse[1]);
           }
           newMovie.append(qualitiesToUse);
           list.append(newMovie);
