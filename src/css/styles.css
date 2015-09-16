@@ -6,13 +6,14 @@
 ////////////////////////*/
 body {
   font-size: 20px;
-  background-color: #94FFB8; }
+  background-color: #2c3e50;
+  color: white; }
 
 a {
   padding: 0;
   margin: 0;
   text-decoration: none;
-  color: black; }
+  color: white; }
 
 li {
   list-style: none; }
@@ -20,6 +21,19 @@ li {
 h2 {
   padding: 0;
   margin: 0; }
+
+.title {
+  text-align: center;
+}
+
+.formClass {
+  text-align: center;
+  color: black;
+}
+
+.formClass button {
+  font-size: 1.5rem;
+}
 
 /*////////////////////////
 /// IDs
@@ -34,7 +48,7 @@ h2 {
   position: relative;
   max-width: 12em;
   display: inline-block;
-  border: 0.25em solid #FF8C89;
+  border: 0.25em solid #c0392b;
   margin: .7em;
   overflow: hidden; }
 
@@ -43,21 +57,23 @@ h2 {
   font-size: 0; }
 
 .movie-title {
-  background-color: #FF8C89;
+  background-color: #2980b9;
   font-size: .9em;
   position: absolute;
   bottom: .5em;
   left: 0;
-  right: 0; }
+  right: 0;
+  border: 2px solid white; }
 
 .movie-year {
-  background-color: #FF8C89;
+  background-color: #2980b9;
   border-radius: .2em;
   position: absolute;
   top: 1em;
   left: -1.5em;
   transform: rotate(-45deg);
-  padding: 0.1em 1.5em 0 2em; }
+  padding: 0.1em 1.5em 0 2em;
+  border: 2px solid white; }
 
 .movie-qualityList {
   position: absolute;
@@ -65,8 +81,17 @@ h2 {
   right: -.1em; }
 
 .movie-quality {
-  background-color: #FF8C89;
+  background-color: #2980b9;
   border-radius: .2em;
   padding: .1em;
   display: block;
-  margin-bottom: .5em; }
+  margin-bottom: .5em;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  border-left: 3px solid white; }
+
+
+
+
+
+
