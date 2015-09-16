@@ -46,7 +46,8 @@ h1 {
 
 .options {
   background-color: #c7ffda;
-  border: #FF8C89 dashed 0.1em; }
+  border: #FF8C89 dashed 0.1em;
+  margin-bottom: .8em; }
 
 .movie-article {
   position: relative;

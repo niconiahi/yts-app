@@ -32,10 +32,6 @@ var src = {
 /////////////////////////////////////////////
 // Starts here
 /////////////////////////////////////////////
-gulp.task('hello', function() {
-  console.log('Hello world');
-});
-
 gulp.task('sass', function(){
   return gulp.src('src/scss/**/*.scss')
     .pipe(sass())

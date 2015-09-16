@@ -1,7 +1,7 @@
 $(document).ready(function() {
   'use strict';
 
-  var urlSended = 'https://yts.to/api/v2/list_movies.json?limit=20';
+  var urlSended = 'https://yts.to/api/v2/list_movies.json?limit=21';
   var movies;
   gatherInformation();
 
@@ -96,6 +96,6 @@ $(document).ready(function() {
   }
 
   function resetUrl() {
-    urlSended = 'https://yts.to/api/v2/list_movies.json?&limit=20';
+    urlSended = 'https://yts.to/api/v2/list_movies.json?&limit=21';
   }
 });
