@@ -42,9 +42,9 @@ $(document).ready(function() {
   /// Movie page
   ////////////////////////
 
-  $('body').on('click', 'article', function(beta){
-    selectedMovie();
-  });
+  // $('body').on('click', 'article', function(beta){
+  //   selectedMovie();
+  // });
 
   ////////////////////////
   /// Functions
