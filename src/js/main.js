@@ -1,7 +1,7 @@
 $(document).ready(function() {
   'use strict';
 
-  var urlSended = 'https://yts.to/api/v2/list_movies.json?limit=21';
+  var urlSended = 'https://yts.am/api/v2/list_movies.json?limit=20';
   var movies;
   gatherInformation();
 
